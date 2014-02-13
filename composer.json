@@ -1,11 +1,17 @@
 {
 	"name": "philippfrenzel/yii2fullpagejs",
-	"description": "Yii2 fullpage.js Integration for Yii2",
-	"keywords": ["yii","blocksit"],
+	"description": "Yii2 fullpage.js Integration",
+	"keywords": ["yii","fullPage.js"],
 	"homepage": "http://www.frenzel.net/",
 	"type": "yii2-extension",
 	"license": "MIT",
 	"authors": [
+		{
+			"name": "Alvaro Trigo",
+			"email": "alvaro@alvarotrigo.com",
+			"homepage": "http://www.alvarotrigo.com/",
+			"role": "project lead"
+		},
 		{
 			"name": "Philipp Frenzel",
 			"email": "philipp@frenzel.net",
