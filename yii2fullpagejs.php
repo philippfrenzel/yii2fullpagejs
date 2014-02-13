@@ -80,8 +80,15 @@ class yii2fullpagejs extends Widget
         $js = array();
         
         $options = Json::encode($this->clientOptions);
-        $js[] = "var mscontainer$id = document.querySelector('#$id');";
-        $js[] = "var msnry$id = new Masonry( mscontainer$id, $options);";
+        $js[] = "$.fn.fullpage($options);";
+
+        /*if (!empty($this->clientEvents)) {
+            $js = array();
+            foreach ($this->clientEvents as $event => $handler) {
+                $js[] = "dhtmlx$id.attachEvent('$event', $handler);";
+            }
+            $view->registerJs(implode("\n", $js),View::POS_READY);
+        }*/
         
         $view->registerJs(implode("\n", $js),View::POS_READY);
     }
