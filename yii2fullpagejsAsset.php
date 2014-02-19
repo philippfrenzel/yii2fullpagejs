@@ -24,5 +24,7 @@ class yii2fullpagejsAsset extends AssetBundle
     );
     public $depends = array(
         'yii\web\JqueryAsset',
+        'yii\jui\CoreAsset',
+        'yii\jui\EffectAsset'
     );
 }
